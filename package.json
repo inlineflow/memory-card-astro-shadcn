@@ -1,0 +1,27 @@
+{
+  "name": "shadcn-tmpl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.1",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.513.0",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^4.1.8"
+  },
+  "devDependencies": {
+    "tw-animate-css": "^1.3.4"
+  }
+}
