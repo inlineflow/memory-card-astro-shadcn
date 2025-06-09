@@ -86,12 +86,12 @@ export function CardCointainer() {
         <p className="text-end">Score: {score}</p>
         <p className="text-end">High Score: {highScore}</p>
       </div>
-      <ul className="grid grid-cols-5 gap-5">
+      <ul className="grid grid-cols-2 md:grid-cols-5 gap-5">
         {data.map((poke) => (
           <Card
             onClick={() => handlePokemonClick(poke.id)}
             title=""
-            content={<img src={poke.sprites.front_default}></img>}
+            cardContent={<img src={poke.sprites.front_default}></img>}
             footer={poke.name[0]?.toUpperCase() + poke.name.slice(1)}
             key={poke.id}
           ></Card>

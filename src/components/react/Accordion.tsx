@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/shadcn/components/ui/accordion";
+} from "@/components/ui/accordion";
 
 interface Props {
   data: {
