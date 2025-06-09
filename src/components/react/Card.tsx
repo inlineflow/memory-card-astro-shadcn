@@ -4,22 +4,23 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/shadcn/components/ui/card";
 
 interface Props {
   title: string;
-  content: string;
+  content: React.ReactNode;
   footer: string;
+  onClick?: () => void;
 }
 
-export function Card({ title, content, footer }: Props) {
+export function Card({ title, content, footer, onClick }: Props) {
   return (
-    <BaseCard>
+    <BaseCard onClick={onClick}>
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent>{content}</CardContent>
-      <CardFooter>{footer}</CardFooter>
+      <CardFooter className="text-center self-center">{footer}</CardFooter>
     </BaseCard>
   );
 }
